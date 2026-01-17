@@ -42,6 +42,13 @@ int main(){
 
     std::cout << "Hello " << full_name  << " you are " << age3 << " years old!" << std::endl;
 
+
+   //------------------- data with spaces
+   const int  max_length{ 15 };
+   char name[max_length]{};
+   std::cout << "What's your name dear :" << std::endl;
+   std::cin.getline(name, max_length); // Get input with spaces
+
             
  
   return 0;
