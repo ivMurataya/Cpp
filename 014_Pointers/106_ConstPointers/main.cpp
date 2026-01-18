@@ -153,3 +153,15 @@ int main() {
 
 	return 0;
 }
+
+
+
+
+int var1{ 33 };
+int* p_var2{ &var1 }; // non cont pointer to int
+const int* p_var3{ &var1 }; // Pointer to const
+const int* const p_var4{ &var1 }; // Const pointer to const data
+int* const p_numer7{ &number7 }; // Const pointer to non const data
+
+// if const shows up on the left of *: the data is const
+// if const shows up on the right of *: the pointer is const
