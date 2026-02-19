@@ -21,6 +21,11 @@ int main(){
 }
 
 /*
+
+month : 2
+sizeof(month) : 1
+
+Definition of months
 Jan -1
 Feb 0 
 Mar 1 
