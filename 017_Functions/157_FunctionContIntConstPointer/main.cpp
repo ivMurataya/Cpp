@@ -2,7 +2,7 @@
 
 int dog_count{2};
 
-void say_age(const int* const a); // Declaration
+void say_age(const int* const  a); // Declaration
 
 int main(){
 
@@ -16,9 +16,9 @@ int main(){
 
 
 void say_age(const int* const a){ // Parameter
-    //++(*age); //
+    //++(*age); // cant modify the value of the cons int *
     std::cout <<  "Hello , you are " << *a << " years old! &age : " << &a <<  std::endl;//24
-    //age = & dog_count;
+    //a = & dog_count; // cant modify the direction of the const pointer
 }
 
 
