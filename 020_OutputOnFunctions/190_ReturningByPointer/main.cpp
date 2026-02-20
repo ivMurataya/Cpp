@@ -34,5 +34,16 @@ max : 79
 0000003011D5F9A0
 0000003011D5FA08
 
+
+You use const because:
+    const double scores[]
+    Prevents modifying the input array
+    Makes the function safe
+    Allows passing const arrays
+ const double* return type:
+    Prevents modifying the max element through the returned pointer
+    Maintains read-only behavior
+
+
 */
 
