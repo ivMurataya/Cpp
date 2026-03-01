@@ -46,31 +46,51 @@ int main() {
 		++d;
 	}
 
+
+	std::cout << "-----------------------------" << std::endl;
+	//Capture lists
+	double e{ 10 };
+	double f{ 20 };
+	double x{ 100 };
+
+
+	auto func4 = [e, f](double ab, double bb) {
+		std::cout << "e + f + ab + bb : " << e + f + ab + bb << std::endl;
+		};
+
+	func4(x, 100.50);
+
+
+
 	return 0;
 }
 
 /*
+
 a + b : 30
 -----------------------------
-Outer value : 42 &outer : 0000009F76B8FB54
-Inner value : 42 &inner : 0000009F76B8FB74
-Outer value : 43 &outer : 0000009F76B8FB54
-Inner value : 42 &inner : 0000009F76B8FB74
-Outer value : 44 &outer : 0000009F76B8FB54
-Inner value : 42 &inner : 0000009F76B8FB74
-Outer value : 45 &outer : 0000009F76B8FB54
-Inner value : 42 &inner : 0000009F76B8FB74
-Outer value : 46 &outer : 0000009F76B8FB54
-Inner value : 42 &inner : 0000009F76B8FB74
+Outer value : 42 &outer : 000000234E4FF934
+Inner value : 42 &inner : 000000234E4FF954
+Outer value : 43 &outer : 000000234E4FF934
+Inner value : 42 &inner : 000000234E4FF954
+Outer value : 44 &outer : 000000234E4FF934
+Inner value : 42 &inner : 000000234E4FF954
+Outer value : 45 &outer : 000000234E4FF934
+Inner value : 42 &inner : 000000234E4FF954
+Outer value : 46 &outer : 000000234E4FF934
+Inner value : 42 &inner : 000000234E4FF954
 -----------------------------
-Outer value : 42 &outer : 0000009F76B8FB94
-Inner value : 42 &inner : 0000009F76B8FB94
-Outer value : 43 &outer : 0000009F76B8FB94
-Inner value : 43 &inner : 0000009F76B8FB94
-Outer value : 44 &outer : 0000009F76B8FB94
-Inner value : 44 &inner : 0000009F76B8FB94
-Outer value : 45 &outer : 0000009F76B8FB94
-Inner value : 45 &inner : 0000009F76B8FB94
-Outer value : 46 &outer : 0000009F76B8FB94
-Inner value : 46 &inner : 0000009F76B8FB94
+Outer value : 42 &outer : 000000234E4FF974
+Inner value : 42 &inner : 000000234E4FF974
+Outer value : 43 &outer : 000000234E4FF974
+Inner value : 43 &inner : 000000234E4FF974
+Outer value : 44 &outer : 000000234E4FF974
+Inner value : 44 &inner : 000000234E4FF974
+Outer value : 45 &outer : 000000234E4FF974
+Inner value : 45 &inner : 000000234E4FF974
+Outer value : 46 &outer : 000000234E4FF974
+Inner value : 46 &inner : 000000234E4FF974
+-----------------------------
+e + f + ab + bb : 230.5
+
 */
