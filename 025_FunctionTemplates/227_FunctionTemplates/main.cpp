@@ -15,8 +15,20 @@ int main(){
     int* p_x {&x};
     int* p_y{&y};
 
+    std::cout << "px : " << &p_x << std::endl;
+    std::cout << "py : " << &p_y << std::endl;
+
+    // this is incorrect as its comparin the value of the DIrections but no the values
+
     auto result = maximum(p_x,p_y);
     std::cout << "result : " << *result << std::endl;
    
     return 0;
 }
+
+/*
+px : 000000EC1F4FF5C8
+py : 000000EC1F4FF5E8
+result : 7
+
+*/
