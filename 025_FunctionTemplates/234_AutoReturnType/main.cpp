@@ -23,17 +23,25 @@ int main() {
 	std::cout << "size of max3 : " << sizeof(max3) << std::endl;
 
 
+	// If you explicitly specify different types, largest will be deduced
+	auto max4 = maximum<bool,double>(true, false); // double return type deduced
+	std::cout << "max4 : " << max4 << std::endl;
+	std::cout << "size of max3 : " << sizeof(max4) << std::endl;
+
+
 	return 0;
 }
 
 /*
 
-max1 : 101   101 ascii for char E
-size of max1 : 4   Int Result
+max1 : 101
+size of max1 : 4
 max2 : 124.89
-size of max2 : 8   Double Result
+size of max2 : 8
 max3 : 1
-size of max3 : 1    Bool Result
+size of max3 : 1
+max4 : 1
+size of max3 : 8
 
 */
 
