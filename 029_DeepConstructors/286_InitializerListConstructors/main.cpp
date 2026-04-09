@@ -36,3 +36,7 @@ int main(){
    
     return 0;
 }
+
+/*
+Point [ x : 22.4, y : 34.9]
+*/
