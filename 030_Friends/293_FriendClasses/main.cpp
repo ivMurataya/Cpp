@@ -15,15 +15,24 @@ private :
 
 class Cat{
 public : 
+    Cat(std::string name = "p") {
+
+        m_name = name;
+    }
     void print_dog_info(const Dog& d) const{
         std::cout << "Dog [ name : " << d.m_name << ", age : " << d.m_age << "]" << std::endl;
+        std::cout << "ssss " << m_name << std::endl;
+
     }
+
+private:
+    std::string m_name;
 
 };
 
 int main(){
 
-    Cat cat1;
+    Cat cat1("ds");
     
     Dog dog1("Fluffly",2);
 
@@ -34,4 +43,5 @@ int main(){
 
 /*
 Dog [ name : Fluffly, age : 2]
+ssss ds
 */
