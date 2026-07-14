@@ -31,3 +31,44 @@ int main(){
    
     return 0;
 }
+
+/*
+Constructor for dog Dog1 called.
+Constructor for dog Dog2 called.
+Constructor for dog Fluzzy called.
+Destructor for dog Fluzzy called
+
+Reading data from arrays
+Reading shared_ptr_int_arr_1:
+shared_ptr_int_arr_1[0] : 1
+shared_ptr_int_arr_1[1] : 2
+shared_ptr_int_arr_1[2] : 3
+shared_ptr_int_arr_1[3] : 28
+shared_ptr_int_arr_1[4] : 5
+shared_ptr_int_arr_1[5] : 6
+shared_ptr_int_arr_1[6] : 7
+shared_ptr_int_arr_1[7] : 8
+shared_ptr_int_arr_1[8] : 0
+shared_ptr_int_arr_1[9] : 0
+
+Reading shared_ptr_dog_arr_1:
+shared_ptr_dog_arr_1[0] : Dog1
+shared_ptr_dog_arr_1[1] : Fluzzy
+shared_ptr_dog_arr_1[2] : Puffy
+shared_ptr_dog_arr_1[3] : Puffy
+shared_ptr_dog_arr_1[4] : Puffy
+shared_ptr_dog_arr_1[5] : Puffy
+shared_ptr_dog_arr_1[6] : Puffy
+shared_ptr_dog_arr_1[7] : Puffy
+shared_ptr_dog_arr_1[8] : Puffy
+shared_ptr_dog_arr_1[9] : Puffy
+Destructor for dog Puffy called
+Destructor for dog Puffy called
+Destructor for dog Puffy called
+Destructor for dog Puffy called
+Destructor for dog Puffy called
+Destructor for dog Puffy called
+Destructor for dog Puffy called
+Destructor for dog Puffy called
+Destructor for dog Fluzzy called
+Destructor for dog Dog1 called*/
